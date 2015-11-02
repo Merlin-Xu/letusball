@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        $(function(){
+            var socket = io.connect('localhost');
+            var sessionId = '';
+
+            socket.on('connect',  function(data) {
+                $('#incomingChatMessages').append($('<li>'+data.message+'</li>'));
+                sessionId = socket.socket.sessionid;
+                console.log('Connected ' + sessionId);
+                socket.emit('newUser', {id: sessionId, name: $('#name').text()});
+            });
+
+            socket.on('message', function(data) {
+                console.log("message");
+            });
+            socket.on('userDisconnected', function(msg) {
+                socket.send({id:'1',name:"testSessionXu"});
+                $('#incomingChatMessages').append($('<li>'+msg+'</li>'));
+                });
+            socket.on('testSendMsg', function(data) {
+                console.log("Message:"+data.message);
+            });
+            $('#outgoingChatMessage').keypress(function(event) {
+                if(event.which == 13) {
+                    socket.send({id: sessionId, name: $('#name').text(),message:$('#outgoingChatMessage').val()});
+                    $('#outgoingChatMessage').val('');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="name">Fie</p>
+Incoming Chat:&nbsp;<ul id="incomingChatMessages"></ul>
+<br />
+<input type="text" id="outgoingChatMessage">
+</body>
+</html>

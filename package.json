@@ -1,0 +1,43 @@
+{
+  "name": "crm",
+  "version": "0.0.1",
+  "description": "LetsBall",
+  "main": "app.js",
+  "dependencies": {
+    "express": ">=3.4.7",
+    "socket.io": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "later": "~1.1.6",
+    "supervisor": "~0.6.0",
+    "connect-flash": "~0.1.1",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "connect": "~2.21.1",
+    "express-session": "~1.6.1",
+    "cookie-parser": "~1.3.2",
+    "connect-mongo": "~0.4.1",
+    "serve-favicon": "~2.0.1",
+    "querystring": "~0.2.0",
+    "async": "~0.9.0",
+    "ejs": "~1.0.0",
+    "excel-export": "~0.3.11",
+    "strftime": "~0.8.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Conference room"
+  ],
+  "author": "Merlini",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  }
+}

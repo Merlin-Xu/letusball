@@ -1,0 +1,176 @@
+<%- include header %>
+	<script>
+		$(function(){
+      //initial the datapicker component
+      var startTime =  $('#startTimeComp').datepicker({
+          daysOfWeekDisabled: "0,6",
+          autoclose: true,
+          todayHighlight: true,
+          endDate:new Date(),
+      }).on('changeDate', function(ev) {
+        if (ev.date&&endTime.viewDate&&ev.date.valueOf() > endTime.viewDate.valueOf()) {
+          var newDate = new Date(ev.date)
+          newDate.setDate(newDate.getDate() + 1);
+          endTime.setDate(newDate);
+        }
+          endTime.setStartDate(ev.date);
+          startTime.hide();
+          endTime.show();
+      }).data('datepicker');
+      var endTime = $('#endTimeComp').datepicker({
+          daysOfWeekDisabled: "0,6",
+          autoclose: true,
+          todayHighlight: true,
+          startDate: -Infinity,//startTime.viewDate,
+          endDate:new Date(),
+      }).on('changeDate', function(ev) {
+          if (!startTime.viewDate){
+            endTime.setStartDate(-Infinity);
+          }else if(ev.date&&startTime.viewDate && ev.date.valueOf() < startTime.viewDate.valueOf()){
+            var newDate = new Date(ev.date)
+            newDate.setDate(newDate.getDate());
+            startTime.setDate(newDate);
+          }
+          endTime.hide();
+      }).data('datepicker');
+      /**
+       * [Export current table]
+       * @param  {[type]} event [description]
+       * @return
+       *  {[type]}       [description]
+       */
+        $("#exportButton").on('click', function(event) {
+          // if ($("#meetingName").val()==null&&$("#startTime").val()==null&&$("#endTime").val()==null) {}
+          window.open(location.origin+'/ExcelCurrentTable?meetingName='+$("#meetingName").val()+'&startTime='+$("#startTime").val()+'&endTime='+$("#endTime").val(),'_self');
+          return false;
+        });
+        /**
+         * Ajax draw the table
+         * @param  {[type]} event [description]
+         * @return {[type]}       [description]
+         */+
+        $("#searchButton").on('click', function(event) {
+        console.log("Enter");
+        /* Act on the event */
+        $.ajax({
+          url: location.origin+"/getParticipants",
+          data: {meetingName:$("#meetingName").val(),startTime:$("#startTime").val(),endTime:$("#endTime").val()},
+          type: "GET",
+          contentType: "application/json; charset=utf-8",
+          dataType: "jsonp",
+          jsonpCallback:"success",
+          error: function () {
+              console.log("Unable to Get FreeBusy Data");
+          },
+          success: function (response) {
+              console.log("What's Great");
+
+          $('#tableDiv').html( '<table class="table table-striped table-bordered" cellspacing="0" width="100%" id="roomSchedule"><thead><tr><th>Meeting Subject</th><th>Date</th><th>Meeting Room</th><th>Counts</th><th>Export</th></tr></thead></table>' );
+          var dataSet =response;
+          $('#roomSchedule').dataTable( {
+            "drawCallback": function( settings ) {
+                //after the row callback
+                // $(".displayPars").popover({ html : true });
+              },
+             "rowCallback": function( row, data ) {
+                // drow the 1st cell add the display 'members' action
+                console.log(row+"data:"+data);
+                $('td:eq(0)', row).html( '<a href="listDetails?meetingId='+data.meetingId+'" class="displayPars" >'+data.meetingSubject+'</a> ')
+                $('td:eq(1)', row).html(strftime('%B %d, %Y %H:%M:%S',new Date(data.startTime)));
+                },
+              "data": dataSet,
+              "columns": [
+                  { "data": "meetingSubject" },
+                  { "data": "startTime" },
+                  { "data": "meetingRoomName"}
+
+              ],
+              "columnDefs": [
+                {
+                    "targets": [3],
+                    "data": "members",
+                    "render": function(data, type, full) {
+                        return data.length;
+                    }
+                },{
+                    "targets": [4],
+                    "data": "meetingId",
+                    "render": function(data, type, full) {
+                        return "<a href='"+location.origin+"/Excel?meetingId=" + data + "' >Export</a>";
+                    }
+                }
+            ]
+            } );
+
+          }
+        });
+      });
+		});
+    function generateTable(members){
+      var resultHTML = "<table class='table'><thead><tr><th>#</th><th>CorpId</th><th>Name</th></tr></thead><tbody>";
+      for (var i =0; i < members.length; i++) {
+        resultHTML += '<tr><td>'+(i+1)+'</td><td>'+members[i].memberCorpId+'</td><td>'+members[i].memeberName+'</td></tr>';
+      }
+      return resultHTML+'</tbody></table>';
+    }
+	</script>
+</head>
+
+<body class="bs-docs-home">
+    <div class="container theme-showcase">
+        <h1 style=" line-height:2em;"> </h1><br />
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+        <div class="col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong> Attendees Report</strong></h3>
+                </div>
+                <div class="panel-body">
+                   <div class="alert alert-warning ">
+                       <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+                       <strong>Welcome</strong> to Attendees Report.
+                   </div>
+                       <form class="form-horizontal" role="form" name="searchForm">
+                           <div class="form-group">
+                               <div class="col-md-3">
+                                   <!-- <input type="text" class="form-control" id="meetingName" name="meetingName" placeholder="Room Name" > -->
+                                   <select class="form-control" id="meetingName" name="meetingName">
+                                      <option value="">Meeting Rooms</option>
+                                      <option value="Taishan">Taishan</option>
+                                      <option value="NewYork">New York</option>
+                                      <option value="Convington">Convington</option>
+                                  </select>
+                               </div>
+                              <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 50px;">From:</div>
+                              <div class="col-xs-6 col-md-3 controls-row">
+                                  <div class="date input-group" id="startTimeComp">
+                                    <input type="text" class="input-sm form-control" id="startTime" name="startTime" placeholder="mm/dd/yyyy"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar "></i></span>
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 40px;">to:</div>
+                                <div class="col-xs-6 col-md-3 controls-row">
+                                  <div class="date input-group" id="endTimeComp">
+                                    <input type="text" class="input-sm form-control" id="endTime" name="endTime" placeholder="mm/dd/yyyy"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar "></i></span>
+                                  </div>
+                           </div>
+			    				       <div class="col-xs-6 col-sm-1" style="margin-top: -3px;">
+			                       <button class="btn btn-default" type="button" id="searchButton">Search</button>
+			                   </div>
+                         <div class="col-xs-6 col-sm-1" style="margin-top: -3px;">
+                             <button class="btn btn-default" type="button" id="exportButton">Export</button>
+                         </div>
+			               </div>
+               		   </form>
+                       <div class="table-responsive" id="tableDiv">
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-sm-1"></div>
+        </div>
+    </div>
+<%- include footer %>

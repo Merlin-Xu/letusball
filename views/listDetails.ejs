@@ -1,0 +1,22 @@
+<%- include header %>
+<body class="bs-docs-home">
+    <div class="container theme-showcase">
+        <h1 style=" line-height:2em;"> </h1><br />
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+        <div class="col-sm-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong><%=title%></strong></h3>
+                </div>
+                <div class="panel-body">
+                	<div class="alert alert-info "><p><strong>Meeting Subject :</strong>&nbsp;<%=meeting.meetingSubject%></p><strong>Date :</strong>&nbsp;<%=meeting.startTime%></p><strong>Meeting Room :</strong>&nbsp;<%=meeting.meetingRoomName%></p><a href="/Excel?meetingId=<%=meeting.meetingId%>" type="button" class="btn btn-primary" style="margin-top: 10px;position: relative;">Export report</a>
+                	</div>
+					<table class='table'><thead><tr><th>#</th><th>CorpId</th><th>Name</th></tr></thead><tbody>
+					<% meeting.members.forEach(function (member, index) { %>
+					  <tr><td><%=(index+1)%></td><td><%= member.memberCorpId %></td><td><%=member.memeberName %></td></tr>
+					<% }) %>
+					</tbody></table>
+				</div></div></div></div></div></body>
+<%- include footer %>
