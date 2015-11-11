@@ -66,19 +66,16 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(multer);
-/*app.use(session({
+app.use(session({
   secret: settings.cookieSecret,
   key: settings.db, //cookie name
   resave: true,
   cookie: {
     maxAge: 1000 * 60 * 60 * 24 * 30
   }, //30 days
-  store: new MongoStore({
-    db: settings.db,
-    host :settings.host
-  })
-}));*/
-app.use(session({store:new MongoStore({mongooseConnection:mongoose.connection})}));
+  store:new MongoStore({mongooseConnection:mongoose.connection})
+}));
+// app.use(session({}));
 //set the params for the request
 
 // later.date.localTime();
