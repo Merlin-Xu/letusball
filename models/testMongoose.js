@@ -1,7 +1,7 @@
 var settings = require('../settings'),
 mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost/crm');
-var db = mongoose.createConnection('mongodb://'+settings.host+"/"+settings.db); //创建一个数据库连接
+var db = mongoose.createConnection('mongodb://'+settings.host+"/"+settings.db,{"user":settings.user,"pass":settings.pass}); //创建一个数据库连接
 var meetingSchema = mongoose.Schema({
   meetingName: String,
   meetingId:String,

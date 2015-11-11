@@ -7,5 +7,5 @@ module.exports = new Db(settings.db, new Server(settings.host, Connection.DEFAUL
  * init the mongoose
  */
 var settings = require('../settings'),
-mongoose = require('mongoose').connect('mongodb://'+settings.host+"/"+settings.db);
+mongoose = require('mongoose').connect('mongodb://'+settings.host+"/"+settings.db,{"user":settings.user,"pass":settings.pass});
 module.exports = mongoose;
