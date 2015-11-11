@@ -38,9 +38,9 @@ var Team = require("../models/Team.js"),
                 }
             });
     });
- router.get('/searchIndex', function(req, res) {
+ router.get('/', function(req, res) {
         res.render('searchIndex', {
-            title: 'Attendees Report',
+            title: 'Web Servcie Test',
             success: 'success',
             error: 'error'
         });

@@ -20,7 +20,7 @@ var teamSchema = new Schema({
     teamStatus: String,
     inputName: String,
     createdId: String,
-    updateedId: String,
+    updatedId: String,
     point: Schema.Types.Mixed
 });
 
@@ -38,7 +38,7 @@ function Team(team) {
     this.teamStatus = team.teamStatus;
     this.inputName = team.inputName;
     this.createdId = team.createdId;
-    this.updateedId = team.updateedId;
+    this.updatedId = team.updatedId;
     this.point = team.point;
 };
 
@@ -57,7 +57,7 @@ Team.prototype.save = function(callback) {
         teamStatus: this.teamStatus,
         inputName: this.inputName,
         createdId: this.createdId,
-        updateedId: this.updateedId,
+        updatedId: this.updatedId,
         point: this.point
     };
     var conditions = {
@@ -81,7 +81,7 @@ Team.prototype.save = function(callback) {
             doc.teamStatus = team.teamStatus;
             doc.inputName = team.inputName;
             doc.createdId = team.createdId;
-            doc.updateedId = team.updateedId;
+            doc.updatedId = team.updatedId;
             doc.point = _.defaults(team.point, doc.point);
 
             doc.save(function() {
