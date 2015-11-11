@@ -1,0 +1,10 @@
+use letusball;
+db.createUser(
+   {
+     user: "WeAreFamily",
+     pwd: "letUs",
+     roles: [ "readWrite", "dbAdmin" ]
+   }
+)
+
+mongo ip/dbname -u WeAreFamily -p letUs;

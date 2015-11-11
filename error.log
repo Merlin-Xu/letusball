@@ -1,0 +1,306 @@
+[Wed Nov 11 2015 00:36:05 GMT+0800 (CST)] /plugins/com.facerecognition/www/facerecognition.js
+Error: Failed to lookup view "404" in views directory "/Users/Merlini_Xu/Downloads/Workspace/letusball/views"
+    at EventEmitter.render (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/application.js:579:17)
+    at ServerResponse.render (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/response.js:961:7)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/app.js:110:7
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:402:7)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/index.js:111:7
+[Wed Nov 11 2015 15:05:06 GMT+0800 (CST)] /searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:33:38 GMT+0800 (CST)] /searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /css/docstyle.css
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /css/datepicker.css
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /css/SearchingDsk.css
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /js/bootstrap-datepicker.js
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:01 GMT+0800 (CST)] /js/js-date-format.js
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:34:16 GMT+0800 (CST)] /searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:41:12 GMT+0800 (CST)] /searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:42:15 GMT+0800 (CST)] /views/searchIndex
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:48:27 GMT+0800 (CST)] /saveTeam?callback=success&teamName=2009&city=dalian&teamBrief=Taishan&_=1447227810377
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:54:41 GMT+0800 (CST)] /getTeamDetail?callback=success&teamName=2009&city=dalian&teamBrief=Taishan&_=1447227810378
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:55:13 GMT+0800 (CST)] /getTeamDetail?callback=success&teamName=2009&city=dalian&teamBrief=Taishan&_=1447227810379
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:55:29 GMT+0800 (CST)] /getTeamDetail?callback=success&teamName=2009&city=dalian&teamBrief=Taishan&_=1447227810380
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+[Wed Nov 11 2015 15:55:40 GMT+0800 (CST)] /getTeamDetail?callback=success&teamName=2009&city=dalian&teamBrief=Taishan&_=1447227810381
+Error: secret option required for sessions
+    at session (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express-session/index.js:167:12)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at urlencodedParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/urlencoded.js:88:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:330:12)
+    at next (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:271:10)
+    at jsonParser (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/body-parser/lib/types/json.js:100:40)
+    at Layer.handle [as handle_request] (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:312:13)
+    at /Users/Merlini_Xu/Downloads/Workspace/letusball/node_modules/express/lib/router/index.js:280:7
