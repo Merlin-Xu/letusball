@@ -1,4 +1,5 @@
 var mongoose = require('./db'),
+_ = require("underscore"),
     Schema = mongoose.Schema;
 // mongoose.connect('mongodb://localhost/crm');
 var teamSchema = new Schema({
