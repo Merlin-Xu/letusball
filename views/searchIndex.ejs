@@ -15,8 +15,7 @@
            console.log("Unable to Get FreeBusy Data");
         },
         success: function (response) {
-          debugger;
-          console.log("What's Great");
+          $("#tableDiv").text(JSON.stringify(response));
     }
 };
       $.ajax(ajaxCall);
