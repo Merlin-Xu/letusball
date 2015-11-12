@@ -1,14 +1,28 @@
 <%- include header %>
-	<script>
-		$(function(){});
-    function generateTable(members){
-      var resultHTML = "<table class='table'><thead><tr><th>#</th><th>CorpId</th><th>Name</th></tr></thead><tbody>";
-      for (var i =0; i < members.length; i++) {
-        resultHTML += '<tr><td>'+(i+1)+'</td><td>'+members[i].memberCorpId+'</td><td>'+members[i].memeberName+'</td></tr>';
-      }
-      return resultHTML+'</tbody></table>';
+<script type="text/javascript">
+  $(function(){
+    $("#searchButton").on('click', function(){
+      var startTime = $('#startTime').val();
+      var endTime = $('#endTime').val();
+      var ajaxCall = {
+        url: "http://localhost:8070/"+startTime,
+        data: JSON.parse(endTime),
+        type: "GET",
+        contentType: "application/json; charset=utf-8",
+        dataType: "jsonp",
+        jsonpCallback:"success",
+        error: function () {
+           console.log("Unable to Get FreeBusy Data");
+        },
+        success: function (response) {
+          debugger;
+          console.log("What's Great");
     }
-	</script>
+};
+      $.ajax(ajaxCall);
+    });
+  });
+</script>
 </head>
 
 <body class="bs-docs-home">
@@ -20,42 +34,30 @@
         <div class="col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong> Attendees Report</strong></h3>
+                    <h3 class="panel-title"><strong> Test Webservice</strong></h3>
                 </div>
                 <div class="panel-body">
                    <div class="alert alert-warning ">
                        <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> -->
-                       <strong>Welcome</strong> to Attendees Report.
+                       <strong>Welcome</strong> Developer.
                    </div>
                        <form class="form-horizontal" role="form" name="searchForm">
                            <div class="form-group">
-                               <div class="col-md-3">
-                                   <!-- <input type="text" class="form-control" id="meetingName" name="meetingName" placeholder="Room Name" > -->
-                                   <select class="form-control" id="meetingName" name="meetingName">
-                                      <option value="">Meeting Rooms</option>
-                                      <option value="Taishan">Taishan</option>
-                                      <option value="NewYork">New York</option>
-                                      <option value="Convington">Convington</option>
-                                  </select>
-                               </div>
-                              <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 50px;">From:</div>
+                              <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 150px;">Service Name:</div>
                               <div class="col-xs-6 col-md-3 controls-row">
                                   <div class="date input-group" id="startTimeComp">
-                                    <input type="text" class="input-sm form-control" id="startTime" name="startTime" placeholder="mm/dd/yyyy"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar "></i></span>
+                                    <input type="text" class="input-sm form-control" id="startTime" name="startTime" placeholder="Service Name"/>
                                   </div>
                                 </div>
-                                <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 40px;">to:</div>
+                                <div class="col-xs-6 col-md-1" style="line-height: 30px;width: 140px;">Param list:</div>
                                 <div class="col-xs-6 col-md-3 controls-row">
                                   <div class="date input-group" id="endTimeComp">
-                                    <input type="text" class="input-sm form-control" id="endTime" name="endTime" placeholder="mm/dd/yyyy"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar "></i></span>
+                                    <input type="text" class="input-sm form-control" id="endTime" name="endTime" placeholder="Param list"/>
                                   </div>
                            </div>
 			    				       <div class="col-xs-6 col-sm-1" style="margin-top: -3px;">
 			                       <button class="btn btn-default" type="button" id="searchButton">Search</button>
 			                   </div>
-                         <div class="col-xs-6 col-sm-1" style="margin-top: -3px;">
-                             <button class="btn btn-default" type="button" id="exportButton">Export</button>
-                         </div>
 			               </div>
                		   </form>
                        <div class="table-responsive" id="tableDiv">

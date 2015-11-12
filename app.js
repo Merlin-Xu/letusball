@@ -16,7 +16,6 @@
 
 var express = require("express"),
   connect = require('connect'),
-  teams = require('./routes/teamControl'),
   app = express(),
   favicon = require('serve-favicon'),
   path = require('path'),
@@ -30,7 +29,7 @@ var express = require("express"),
   settings = require('./settings'),
   fs = require('fs'),
   bodyParser = require('body-parser'),
-  multer = require('multer'),
+  // multer = require('multer'),
   cookieParser = require('cookie-parser'),
   methodOverride = require('method-override'),
   mongoose = require('./models/db'),
@@ -49,15 +48,15 @@ var express = require("express"),
   syncLog = fs.createWriteStream(__dirname + '/syncLog.log', {
     flags: 'a'
   }),
-//app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(flash());
 /*print the log in terminal*/
-app.use(logger('dev'));
+// app.use(logger('dev'));
 /*use logger to store the log in file test*/
-app.use(logger({
+app.use(logger('combined', {
   stream: accessLog
 }));
 // io.set('transports', ['xhr-polling']);
@@ -66,11 +65,12 @@ app.use(methodOverride());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
-app.use(multer);
+// app.use(multer());
 app.use(session({
   secret: settings.cookieSecret,
   key: settings.db, //cookie name
   resave: true,
+  saveUninitialized: true,
   cookie: {
     maxAge: 1000 * 60 * 60 * 24 * 30
   }, //30 days
@@ -87,6 +87,7 @@ app.set("ipaddr", "127.0.0.1");
 
 //Server's port number
 app.set("port", 8070);
+app.set("env", 'dev');
 /* Socket.IO events */
 
 app.use(function(req, res) {
@@ -97,9 +98,18 @@ app.use(function(err, req, res, next) {
   errorLog.write(meta + err.stack + '\n');
   next();
 });
-
+if (app.get('env') === 'production') {
+  console.log("set secure to true");
+  app.set('trust proxy', 1); // trust first proxy 
+  sess.cookie.secure = true; // serve secure cookies 
+}
 //Start the http server at port and IP defined before
 http.listen(app.get("port"), function() {
   console.log("Server up and running. Go to http://" + app.get("ipaddr") + ":" + app.get("port"));
 });
-app.use('/team', teams);
+var birds = require('./routes/birds'),
+ teams = require('./routes/teamControl'),
+routers = require('./routes');
+app.use('/birds', birds);
+app.use('/teams', teams);
+app.use('/', routers);

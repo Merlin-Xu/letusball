@@ -45,7 +45,7 @@ $.ajax({
 });
 
 $.ajax({
-        url: "http://localhost:8070/saveTeam",
+        url: "http://localhost:8070/teams/saveTeam",
     data: {teamName:'2009',city:'dalian',teamBrief:'Taishan'},
         type: "GET",
         contentType: "application/json; charset=utf-8",
