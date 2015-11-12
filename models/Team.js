@@ -1,5 +1,5 @@
 var mongoose = require('./db'),
-_ = require("underscore"),
+    _ = require("underscore"),
     Schema = mongoose.Schema;
 // mongoose.connect('mongodb://localhost/crm');
 var teamSchema = new Schema({
@@ -41,7 +41,7 @@ function Team(team) {
     this.createdId = team.createdId;
     this.updatedId = team.updatedId;
     this.point = team.point;
-};
+}
 
 //存储会议信息
 Team.prototype.save = function(callback) {
@@ -65,7 +65,7 @@ Team.prototype.save = function(callback) {
         teamId: team.teamId
     };
     teamModel.findOne(conditions, function(err, doc) {
-        if (doc == null) {
+        if (doc === null) {
             var newTeam = new teamModel(team);
             newTeam.save(function() {
                 callback(err, newTeam);
